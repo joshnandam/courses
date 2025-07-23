@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Meme - Login</title> 
+    <link rel="stylesheet" href="css/a.css">
+    <link rel="stylesheet" href="css/b.css">
+    <link rel="stylesheet" href="css/d.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Study Meme</h1>
+            <h2>Login</h2>
+        </header>
+        <main>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="usernameEmail">Username or Email</label>
+                    <input type="text" id="usernameEmail" name="usernameEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Study Meme. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple client-side redirection for demo purposes
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            // In a real application, you'd send data to a server here.
+            // For this demo, we just redirect.
+            window.location.href = 'materials.html';
+        });
+    </script>
+</body>
+</html>

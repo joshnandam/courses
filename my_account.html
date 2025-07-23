@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Meme - My Account</title>
+    <link rel="stylesheet" href="css/a.css">
+    <link rel="stylesheet" href="css/c.css">
+    <link rel="stylesheet" href="css/d.css">
+    <link rel="stylesheet" href="css/e.css"> <!-- For general info/utility page styles -->
+</head>
+<body>
+    <div class="container dashboard-container">
+        <header class="dashboard-header">
+            <h1>Study Meme</h1>
+        </header>
+        <main class="materials-dashboard">
+            <aside class="sidebar-nav">
+                <ul>
+                    <li><a href="materials.html" class="nav-link">Home</a></li>
+                    <li><a href="premium.html" class="nav-link">Premium</a></li>
+                    <li><a href="referral.html" class="nav-link">Referral</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="my_account.html" class="nav-link active">My Account</a></li>
+                    <li class="separator"></li>
+                    <li class="logout-item"><a href="index.html" class="nav-link logout-button">Logout</a></li>
+                </ul>
+            </aside>
+            <section class="main-content-area">
+                <h2>My Account</h2>
+                <p>Manage your profile information and view your subscription history.</p>
+
+                <div class="account-section profile-info">
+                    <h3>Profile Information</h3>
+                    <div class="profile-details">
+                        <img src="https://placehold.co/100x100/ADD8E6/000000?text=User" alt="Profile Picture" class="profile-picture">
+                        <div class="user-data">
+                            <p><strong>Name:</strong> John Doe</p>
+                            <p><strong>Email:</strong> johndoe@example.com</p>
+                            <p><strong>Address:</strong> 123 Study Lane, Knowledge City, ST 12345</p>
+                            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <button class="btn-primary edit-profile-btn">Edit Profile</button>
+                </div>
+
+                <div class="account-section subscription-history">
+                    <h3>Past Subscriptions</h3>
+                    <p class="no-subscription-data" style="display: none;">No past subscriptions found.</p>
+                    <table class="subscription-table">
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monthly Premium</td>
+                                <td>2024-01-15</td>
+                                <td>2024-02-14</td>
+                                <td>Expired</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Premium</td>
+                                <td>2023-03-01</td>
+                                <td>2024-02-29</td>
+                                <td>Expired</td>
+                            </tr>
+                            <!-- Add more rows for past subscriptions here -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Study Meme. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

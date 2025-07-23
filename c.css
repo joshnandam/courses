@@ -1,0 +1,115 @@
+/* css/c.css */
+
+/* Dashboard Specific Container and Main Layout (for materials.html and course pages) */
+.container.dashboard-container {
+    max-width: 1200px; /* Wider for dashboard content */
+    padding: 30px; /* Consistent padding */
+    display: flex;
+    flex-direction: column; /* Revert to column for overall structure */
+    min-height: 90vh; /* Ensure it takes up most of the viewport height */
+    text-align: left; /* Default text alignment for content */
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: center; /* Center the title */
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    text-align: center; /* Ensure header content is centered */
+}
+
+.dashboard-header h1 {
+    font-size: 3em; /* Make title bigger for dashboard */
+    margin: 0; /* Remove default margin */
+}
+
+/* Main layout for dashboard with sidebar */
+.materials-dashboard {
+    display: flex;
+    flex-grow: 1; /* Allows main content area to expand */
+    gap: 30px; /* Space between sidebar and main content */
+    margin-top: 20px; /* Space from header */
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+    width: 220px; /* Fixed width for sidebar */
+    background-color: #e8f5e9; /* Lighter green background */
+    border-radius: 8px;
+    padding: 25px 0; /* Vertical padding, no horizontal */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 5px;
+}
+
+.sidebar-nav .nav-link {
+    display: block; /* Make the whole link clickable */
+    padding: 12px 25px; /* Padding inside links */
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+    background-color: #dcedc8; /* Slightly darker green on hover/active */
+    color: #2E7D32; /* Darker text */
+    border-left: 5px solid #4CAF50; /* Highlight active/hover */
+    padding-left: 20px; /* Adjust padding for border */
+}
+
+/* Logout button within sidebar */
+.sidebar-nav .logout-item {
+    margin-top: 30px; /* Space above logout button */
+    border-top: 1px solid #dcedc8;
+    padding-top: 20px;
+}
+
+.sidebar-nav .logout-button {
+    background-color: #f44336; /* Red for logout */
+    color: white;
+    border-left: none !important; /* Override border-left from nav-link */
+    padding-left: 25px !important; /* Restore padding for button */
+}
+
+.sidebar-nav .logout-button:hover {
+    background-color: #d32f2f;
+    border-left: none !important;
+}
+
+/* Sidebar separator for better grouping */
+.sidebar-nav .separator {
+    height: 1px;
+    background-color: #dcedc8; /* Lighter green separator */
+    margin: 15px 0;
+    width: 80%; /* Shorter separator */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Content Area base styles */
+.main-content-area {
+    flex-grow: 1; /* Allows content to take remaining space */
+    padding-right: 15px; /* Little padding on the right to match left sidebar */
+}
+
+.materials-dashboard h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.materials-dashboard p {
+    margin-bottom: 30px;
+    color: #555;
+}

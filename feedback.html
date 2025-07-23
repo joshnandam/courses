@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Meme - Feedback</title>
+    <link rel="stylesheet" href="css/a.css">
+    <link rel="stylesheet" href="css/c.css">
+    <link rel="stylesheet" href="css/d.css">
+    <link rel="stylesheet" href="css/e.css">
+</head>
+<body>
+    <div class="container dashboard-container">
+        <header class="dashboard-header">
+            <h1>Study Meme</h1>
+        </header>
+        <main class="materials-dashboard">
+            <aside class="sidebar-nav">
+                <ul>
+                    <li><a href="materials.html" class="nav-link">Home</a></li>
+                    <li><a href="premium.html" class="nav-link">Premium</a></li>
+                    <li><a href="referral.html" class="nav-link">Referral</a></li>
+                    <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="my_account.html" class="nav-link">My Account</a></li>
+                    <li class="separator"></li>
+                    <li class="logout-item"><a href="index.html" class="nav-link logout-button">Logout</a></li>
+                </ul>
+            </aside>
+            <section class="main-content-area">
+                <h2>Share Your Feedback</h2>
+                <p>We'd love to hear from you! Your insights help us improve Study Meme.</p>
+
+                <form class="feedback-form">
+                    <div class="input-group">
+                        <label for="feedback-type">Type of Feedback:</label>
+                        <select id="feedback-type" name="feedback-type" required>
+                            <option value="">Select an option</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="compliment">Compliment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="feedback-message">Your Message:</label>
+                        <textarea id="feedback-message" name="feedback-message" rows="7" placeholder="Tell us what you think..." required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Your Email (Optional):</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                    </div>
+
+                    <button type="submit" class="btn-primary">Submit Feedback</button>
+                </form>
+
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Study Meme. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

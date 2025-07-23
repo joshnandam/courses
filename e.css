@@ -1,0 +1,282 @@
+/* css/e.css */
+
+/* --- Styles for new pages (Premium, Referral, Feedback, About) --- */
+
+/* Primary Button Styling (reusable) */
+.btn-primary {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block; /* Allows padding and margin to work correctly */
+    text-align: center;
+    text-decoration: none; /* In case it's an anchor tag */
+    margin-top: 15px; /* Space from elements above */
+}
+
+.btn-primary:hover {
+    background-color: #45a049; /* Darker green */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Premium Page Styles */
+.premium-features ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.premium-features ul li {
+    background-color: #e8f5e9; /* Light green background for list items */
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 1.05em;
+    color: #333;
+}
+
+/* Simple icon check - replace with actual icon font if using one */
+.premium-features ul li::before {
+    content: '\2713'; /* Unicode checkmark */
+    color: #4CAF50; /* Green checkmark */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.pricing-plan {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.plan-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1; /* Allow cards to grow */
+    min-width: 280px; /* Minimum width for cards */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card.featured {
+    border-color: #4CAF50; /* Highlight featured plan */
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.2);
+    transform: scale(1.02); /* Slightly larger */
+}
+
+.plan-card h4 {
+    color: #2E7D32;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.plan-card .price {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.plan-card .price span {
+    font-size: 0.5em;
+    font-weight: normal;
+    color: #777;
+}
+
+.plan-card .save-offer {
+    color: #f44336; /* Red for savings */
+    font-weight: bold;
+    margin-top: -5px; /* Pull it closer to price */
+    margin-bottom: 20px;
+}
+
+
+/* Referral Page Styles */
+.referral-guide ol {
+    list-style-type: decimal;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.referral-guide ol li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.your-code {
+    background-color: #e8f5e9;
+    border: 1px dashed #4CAF50;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.referral-code-display {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2E7D32;
+    background-color: #dcedc8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    user-select: all; /* Allows easy text selection */
+}
+
+.your-code .copy-code {
+    margin-bottom: 15px; /* Space between button and note */
+}
+
+.your-code .note {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+/* Feedback Page Styles */
+.feedback-form {
+    max-width: 600px; /* Limit form width for better readability */
+    margin: 20px auto 0 auto; /* Center the form */
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: left; /* Ensure form elements align left */
+    gap: 20px; /* Increase gap between form groups */
+}
+
+/* Reusing existing input-group styles */
+.feedback-form .input-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    display: block; /* Ensure label is on its own line */
+}
+
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Include padding/border in element's total width */
+}
+
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.feedback-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px;
+}
+
+
+/* About Page Styles */
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+    color: #444;
+}
+
+.about-section h3, .contact-info h3 {
+    color: #4CAF50;
+    font-size: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.contact-info {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for new pages */
+@media (max-width: 768px) {
+    .pricing-plan {
+        flex-direction: column;
+        align-items: center; /* Center cards when stacked */
+        gap: 20px;
+    }
+
+    .plan-card {
+        width: 90%; /* Make cards take more width on small screens */
+        max-width: 400px; /* Limit max width even when full width */
+    }
+
+    .feedback-form {
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 0; /* Full width */
+        box-shadow: none;
+    }
+
+    /* Adjust content-meme for better spacing on mobile */
+    .content-meme {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}

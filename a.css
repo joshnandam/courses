@@ -1,0 +1,62 @@
+/* css/a.css */
+
+/* Basic Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* max-width for forms will be in b.css */
+    padding: 30px;
+    text-align: center; /* Default for forms */
+    display: flex;
+    flex-direction: column;
+    min-height: 500px; /* Minimum height for better layout */
+}
+
+/* Header Styles (shared by all pages) */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #4CAF50; /* A nice green */
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
+
+header h2 {
+    color: #555;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Footer Styles (shared by all pages) */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 0.85em;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+    text-align: center; /* Center footer text */
+}
